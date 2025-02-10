@@ -1,0 +1,178 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe6e6;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.landing-page,
+.photo-story,
+.timer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #ff4d4d;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #ff4d4d;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 15px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #ff3333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+}
+
+.caption {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.flying-hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.heart {
+  position: absolute;
+}
+
+p {
+  color: #ff4d4d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+
+/* Mobil cihazlar için düzenlemeler */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .landing-page,
+  .photo-story,
+  .timer {
+    padding: 15px;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Çok küçük ekranlar için düzenlemeler */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 300px;
+    margin: 8px auto;
+  }
+
+  .App {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Büyük ekranlar için düzenlemeler */
+@media screen and (min-width: 1200px) {
+  .landing-page,
+  .photo-story,
+  .timer {
+    max-width: 1000px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.return-home-btn {
+  background-color: #ff6b6b;
+  margin-top: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.return-home-btn:hover {
+  background-color: #ff5252;
+  transform: scale(1.05);
+}
+
