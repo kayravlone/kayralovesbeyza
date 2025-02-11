@@ -38,9 +38,9 @@ const Timer = ({ targetDate, onReturnHome }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 0.5 }}
     >
-      <h2>I love you</h2>
+      <h2>Seni ilk gördüğümden beri seni çok severek hayatımı geçirdiğim süre:</h2>
       <p>
-        {timeElapsed.years} years {timeElapsed.months} months {timeElapsed.days} days {timeElapsed.seconds} seconds
+        {timeElapsed.years} yıl {timeElapsed.months} ay {timeElapsed.days} gün {timeElapsed.seconds} saniye
       </p>
       
       <button 

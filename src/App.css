@@ -59,6 +59,8 @@ button:hover {
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   margin: 20px 0;
+  max-height: 60vh;
+  object-fit: contain;
 }
 
 .caption {
@@ -92,58 +94,82 @@ p {
 
 /* Mobil cihazlar için düzenlemeler */
 @media screen and (max-width: 768px) {
+  .App {
+    padding: 10px;
+    height: auto;
+    min-height: 100vh;
+  }
+
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
   }
 
   button {
     padding: 12px 24px;
     font-size: 1rem;
-    margin: 10px;
+    margin: 8px;
+    width: 90%;
+    max-width: 280px;
   }
 
   .landing-page,
   .photo-story,
   .timer {
-    padding: 15px;
+    padding: 10px;
+    margin: 0;
+    width: 95%;
+  }
+
+  .photo {
+    max-height: 50vh;
+    margin: 10px 0;
   }
 
   .caption {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-top: 8px;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
   }
 }
 
 /* Çok küçük ekranlar için düzenlemeler */
 @media screen and (max-width: 480px) {
+  .App {
+    padding: 8px;
+  }
+
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   button {
     padding: 10px 20px;
-    width: 80%;
-    max-width: 300px;
-    margin: 8px auto;
-  }
-
-  .App {
-    padding: 10px;
+    font-size: 0.9rem;
+    width: 95%;
+    max-width: 250px;
+    margin: 6px auto;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .return-home-btn {
+    margin-top: 15px;
   }
 }
 

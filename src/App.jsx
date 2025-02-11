@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import LandingPage from "./components/LandingPage"
 import PhotoStory from "./components/PhotoStory"
@@ -10,13 +10,72 @@ import "./App.css"
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState("landing")
+  const [isPlaying, setIsPlaying] = useState(true)
+  const audioRef = useRef(new Audio("/fadeIntoYou.mp3"))
+  const audio = audioRef.current
+  audio.loop = true
+  audio.volume = 0.5
+  useEffect(() => {
+    
+   
+    
+    return () => {
+      audio.pause()
+      audio.currentTime = 0
+    }
+  }, [])
 
-  const handleExplore = () => setCurrentScreen("photoStory")
+ 
+
+  const toggleMusic = async () => {
+    const audio = audioRef.current
+    if (isPlaying) {
+      audio.pause()
+    } else {
+      try {
+        await audio.play()
+      } catch (error) {
+        console.log("Müzik çalınamadı:", error)
+      }
+    }
+    setIsPlaying(!isPlaying)
+  }
+
+  const handleExplore = async () => {
+    try {
+      await audio.play()
+      setCurrentScreen("photoStory")
+    } catch (error) {
+      console.log("Müzik çalınamadı:", error)
+      setCurrentScreen("photoStory") 
+    }
+  }
   const handlePhotoStoryComplete = () => setCurrentScreen("timer")
   const handleReturnHome = () => setCurrentScreen("landing")
 
   return (
     <div className="App">
+      <button 
+        onClick={toggleMusic}
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          zIndex: 1000,
+          padding: '10px',
+          borderRadius: '50%',
+          width: '40px',
+          height: '40px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          background: 'rgba(255, 255, 255, 0.2)',
+          border: '1px solid white',
+          cursor: 'pointer'
+        }}
+      >
+        {isPlaying ? '🔊' : '🔇'}
+      </button>
       <AnimatePresence mode="wait">
         {currentScreen === "landing" && (
           <motion.div
@@ -58,4 +117,5 @@ function App() {
 }
 
 export default App
+
 
