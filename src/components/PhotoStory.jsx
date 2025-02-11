@@ -178,7 +178,7 @@ function PhotoStory({ onComplete }) {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
         >
-          Previous
+          Önceki hikayemiz
         </motion.button>
         <motion.button
           onClick={nextPhoto}
@@ -188,7 +188,7 @@ function PhotoStory({ onComplete }) {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
         >
-          {currentPhotoIndex === photos.length - 1 ? "Finish" : "Next"}
+          {currentPhotoIndex === photos.length - 1 ? "Seni çok seviyorum sevgilim ❤️" : "Sonraki hikayemiz"}
         </motion.button>
       </div>
     </div>
