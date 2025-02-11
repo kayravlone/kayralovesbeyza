@@ -55,6 +55,19 @@ function App() {
 
   return (
     <div className="App">
+      <div 
+        style={{
+          position: 'fixed',
+          bottom: '10px',
+          left: '10px',
+          color: 'rgba(82, 80, 80, 0.6)',
+          fontSize: '12px',
+          zIndex: 1000,
+          fontFamily: 'Arial, sans-serif'
+        }}
+      >
+        Aşkla Hesna için geliştirildi ❤️
+      </div>
       <button 
         onClick={toggleMusic}
         style={{
