@@ -36,6 +36,10 @@ const photos = [
     caption: "Beraber geçirdiğimzi İlk yılbaşımızz",
   },
   {
+     src: "18.jpeg",
+     caption: "Sen tatlı yaparken bende kendi tatlımı izlerkenn",
+   },
+  {
     src: "8.jpeg",
     caption: "Caddebostan'a gittiğimiz gün",
   },
@@ -61,11 +65,11 @@ const photos = [
    },
    {
      src: "14.jpeg",
-     caption: "Çiçeklerin en güzelini hak ediyorsun",
+     caption: "Tüm çiçeklerden güzel olduğun için ne alacağımı bilemediğim bir gün..",
    },
    {
      src: "15.jpeg",
-     caption: "Manzaram benim",
+     caption: "İstanbul'daki en güzel manzaramı çekerken",
    },
    {
      src: "16.jpeg",
@@ -75,10 +79,7 @@ const photos = [
      src: "17.jpeg",
      caption: "Tatlı yedim ama doyamıyorum napıyımmm",
    },
-  // {
-  //   src: "18.jpeg",
-  //   caption: "Our garden project",
-  // },
+   
   // {
   //   src: "19.jpeg",
   //   caption: "The surprise birthday party",
