@@ -8,8 +8,8 @@ function LandingPage({ onExplore }) {
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h1>"Dünyanın en güzel kızına hazırlandı❤️"</h1>
-      <h1>Hazırsan başlayalım!</h1>
+      <h1>"Kelimelerle tarif edilemeyecek güzelime hazırlandı❤️"</h1>
+      <h1>Hazırsan başlayalım aşkım</h1>
       <button onClick={onExplore}>Beni dünyanın en güzel çiftinin hikayesine götür.</button>
     </motion.div>
   )

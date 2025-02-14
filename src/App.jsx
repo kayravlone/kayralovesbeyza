@@ -66,7 +66,7 @@ function App() {
           fontFamily: 'Arial, sans-serif'
         }}
       >
-        Aşkla Hesna için geliştirildi ❤️
+        Aşkla Beyzam için geliştirildi ❤️
       </div>
       <button 
         onClick={toggleMusic}
