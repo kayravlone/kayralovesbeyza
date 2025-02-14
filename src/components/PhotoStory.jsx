@@ -9,88 +9,88 @@ import "react-photo-view/dist/react-photo-view.css"
 const photos = [
   {
     src: "/1.jpeg",
-    caption: "Our first date at the park",
+    caption: "İlk fotoğraf çekildiğimiz gün",
   },
   { 
     src: "2.jpeg",
-    caption: "That time we went to the beach",
+    caption: "İkimizin en beğendiğim fotoğrafı",
   },
   {
     src: "3.jpeg",
-    caption: "Our favorite coffee shop",
+    caption: "Evlere gittiğimiz gün :((",
   },
   {
     src: "4.jpeg",
-    caption: "The day we adopted our pet",
+    caption: "Yeni yeni İstanbul'a gezmeye gittiğimiz gün",
   },
   {
     src: "5.jpeg",
-    caption: "Our first movie night together",
+    caption: "Yorucu ama güzel olan Kadıköy macerasııı",
   },
   {
     src: "6.jpeg",
-    caption: "That beautiful sunset we watched",
+    caption: "Pizza ve gün batımını izlediğimiz gün",
   },
   {
     src: "7.jpeg",
-    caption: "Our first dinner date",
+    caption: "Beraber geçirdiğimzi İlk yılbaşımızz",
   },
   {
     src: "8.jpeg",
-    caption: "The day we went hiking",
+    caption: "Caddebostan'a gittiğimiz gün",
   },
   {
     src: "9.jpeg",
-    caption: "Our ice cream adventure",
+    caption: "Senden uzaklaştığım için sevmediğim günlerden biri... ",
   },
   {
     src: "10.jpeg",
-    caption: "Dancing in the rain",
+    caption: "FaceTime zamanıı",
   },
   {
     src: "11.jpeg",
-    caption: "Our first holiday together",
+    caption: "Yine çok güzel çıktığın bir fotoğraf daha ",
   },
-  {
-    src: "12.jpeg",
-    caption: "That picnic in the park",
-  },
-  {
-    src: "13.jpeg",
-    caption: "Star gazing night",
-  },
-  {
-    src: "14.jpeg",
-    caption: "Our cooking experiment",
-  },
-  {
-    src: "15.jpeg",
-    caption: "The carnival date",
-  },
-  {
-    src: "16.jpeg",
-    caption: "Our first road trip",
-  },
-  {
-    src: "17.jpeg",
-    caption: "That time we went bowling",
-  },
-  {
-    src: "18.jpeg",
-    caption: "Our garden project",
-  },
-  {
-    src: "19.jpeg",
-    caption: "The surprise birthday party",
-  },
-  {
-    src: "20.jpeg",
-    caption: "Our karaoke night",
-  },
-  {
-    src: "21.jpeg",
-    caption: "The day we made promises",
-  },
+  // {
+  //   src: "12.jpeg",
+  //   caption: "Soğukta donduğumuz gün",
+  // },
+  // {
+  //   src: "13.jpeg",
+  //   caption: "Star gazing night",
+  // },
+  // {
+  //   src: "14.jpeg",
+  //   caption: "Our cooking experiment",
+  // },
+  // {
+  //   src: "15.jpeg",
+  //   caption: "The carnival date",
+  // },
+  // {
+  //   src: "16.jpeg",
+  //   caption: "Our first road trip",
+  // },
+  // {
+  //   src: "17.jpeg",
+  //   caption: "That time we went bowling",
+  // },
+  // {
+  //   src: "18.jpeg",
+  //   caption: "Our garden project",
+  // },
+  // {
+  //   src: "19.jpeg",
+  //   caption: "The surprise birthday party",
+  // },
+  // {
+  //   src: "20.jpeg",
+  //   caption: "Our karaoke night",
+  // },
+  // {
+  //   src: "21.jpeg",
+  //   caption: "The day we made promises",
+  // },
 ]
 
 function PhotoStory({ onComplete }) {

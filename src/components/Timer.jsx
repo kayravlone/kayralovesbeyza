@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 
-const Timer = ({ targetDate, onReturnHome }) => {
+const Timer = ({ onReturnHome }) => {
+  const targetDate = "2024-10-12T00:00:00"; // 12 Ekim 2023 başlangıç tarihi
   const [timeElapsed, setTimeElapsed] = useState({ years: 0, months: 0, days: 0, seconds: 0 })
 
   useEffect(() => {
@@ -14,7 +15,7 @@ const Timer = ({ targetDate, onReturnHome }) => {
 
       const seconds = Math.floor(difference / 1000)
       const days = Math.floor(seconds / (3600 * 24))
-      const months = Math.floor(days / 30.44) // Average days in a month
+      const months = Math.floor(days / 30.44) // Ortalama ay süresi
       const years = Math.floor(months / 12)
 
       setTimeElapsed({
@@ -29,7 +30,7 @@ const Timer = ({ targetDate, onReturnHome }) => {
     const interval = setInterval(updateTimer, 1000)
 
     return () => clearInterval(interval)
-  }, [targetDate])
+  }, [])
 
   return (
     <motion.div
@@ -54,4 +55,3 @@ const Timer = ({ targetDate, onReturnHome }) => {
 }
 
 export default Timer
-
