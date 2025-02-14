@@ -51,30 +51,30 @@ const photos = [
     src: "11.jpeg",
     caption: "Yine çok güzel çıktığın bir fotoğraf daha ",
   },
-  // {
-  //   src: "12.jpeg",
-  //   caption: "Soğukta donduğumuz gün",
-  // },
-  // {
-  //   src: "13.jpeg",
-  //   caption: "Star gazing night",
-  // },
-  // {
-  //   src: "14.jpeg",
-  //   caption: "Our cooking experiment",
-  // },
-  // {
-  //   src: "15.jpeg",
-  //   caption: "The carnival date",
-  // },
-  // {
-  //   src: "16.jpeg",
-  //   caption: "Our first road trip",
-  // },
-  // {
-  //   src: "17.jpeg",
-  //   caption: "That time we went bowling",
-  // },
+   {
+     src: "12.jpeg",
+     caption: "Soğukta donduğumuz gün",
+   },
+   {
+     src: "13.jpeg",
+     caption: "Üsküdarda aşkıma 2. çiçek vakası",
+   },
+   {
+     src: "14.jpeg",
+     caption: "Çiçeklerin en güzelini hak ediyorsun",
+   },
+   {
+     src: "15.jpeg",
+     caption: "Manzaram benim",
+   },
+   {
+     src: "16.jpeg",
+     caption: "Seninle ne kadar vakit geçirsem doyamadığım bir gün daha",
+   },
+   {
+     src: "17.jpeg",
+     caption: "Tatlı yedim ama doyamıyorum napıyımmm",
+   },
   // {
   //   src: "18.jpeg",
   //   caption: "Our garden project",
